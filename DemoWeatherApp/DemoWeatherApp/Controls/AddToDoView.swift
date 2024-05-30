@@ -1,13 +1,13 @@
 //
-//  DayWeatherView.swift
+//  AddToDoView.swift
 //  DemoWeatherApp
 //
-//  Created by  User on 18.05.2024.
+//  Created by MAC on 22/5/24.
 //
 
 import UIKit
 
-class DayWeatherView: UICollectionView {
+class AddToDoView: UICollectionView {
 
     /*
     // Only override draw() if you perform custom drawing.

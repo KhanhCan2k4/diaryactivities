@@ -13,11 +13,13 @@ class CalendarCollectionViewCell: UICollectionViewCell {
     
     public var date = Date();
     
+    public var homeController:HomeController?;
+    
     
     @IBAction func chooseDate(_ sender: UIButton) {
         btnDate.isSelected = true;
         
-        print("go to this date \(self.date.formatted(date: .long, time: .standard))");
+        self.homeController!.toGoActitvitiesView(date: self.date);
         
         btnDate.isSelected = false;
     }

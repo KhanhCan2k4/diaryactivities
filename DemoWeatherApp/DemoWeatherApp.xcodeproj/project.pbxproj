@@ -7,8 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042890CD2BFEE9EB00A2844B /* PinTodoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042890CC2BFEE9EB00A2844B /* PinTodoDAO.swift */; };
 		047BD8202BF1DFF40007C408 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BD81F2BF1DFF40007C408 /* CalendarViewController.swift */; };
 		047BD8222BF1E0B90007C408 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BD8212BF1E0B90007C408 /* HomeController.swift */; };
+		0494D2562C08CC59008758E9 /* CoreXLSX in Frameworks */ = {isa = PBXBuildFile; productRef = 0494D2552C08CC59008758E9 /* CoreXLSX */; };
+		04A823A32BFAE6310006011D /* ActivitiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A823A22BFAE6310006011D /* ActivitiesController.swift */; };
+		04A823A52BFAE7140006011D /* TextNoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A823A42BFAE7140006011D /* TextNoteController.swift */; };
+		04A823A72BFAE7440006011D /* TextTodoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A823A62BFAE7440006011D /* TextTodoController.swift */; };
+		04A823A92BFAEB9C0006011D /* TodosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A823A82BFAEB9C0006011D /* TodosController.swift */; };
+		04A823AB2BFAEBA90006011D /* NotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A823AA2BFAEBA90006011D /* NotesController.swift */; };
+		04A823AE2BFB356B0006011D /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A823AD2BFB356B0006011D /* NotesView.swift */; };
+		04A823B02BFB35910006011D /* NotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A823AF2BFB35910006011D /* NotesCell.swift */; };
+		04A823B22BFB382F0006011D /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A823B12BFB382F0006011D /* Note.swift */; };
+		04A823B52BFB49320006011D /* TodoesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A823B42BFB49320006011D /* TodoesView.swift */; };
+		04A823B72BFB49540006011D /* TodoesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A823B62BFB49540006011D /* TodoesCell.swift */; };
+		04A823BA2BFB4B260006011D /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A823B92BFB4B260006011D /* Todo.swift */; };
+		04A823CB2BFD8A200006011D /* OpenWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A823CA2BFD8A200006011D /* OpenWeatherAPI.swift */; };
+		04A823CE2BFDC6C60006011D /* AddToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A823CD2BFDC6C60006011D /* AddToDoView.swift */; };
+		04A823D02BFDC76B0006011D /* AddToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A823CF2BFDC76B0006011D /* AddToDoCell.swift */; };
+		04A823D32BFDD8E70006011D /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A823D22BFDD8E70006011D /* libsqlite3.0.tbd */; };
+		04A823E42BFE1F9E0006011D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A823D92BFE1F9D0006011D /* FMDatabaseAdditions.m */; };
+		04A823E52BFE1F9E0006011D /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A823DA2BFE1F9D0006011D /* FMDatabaseQueue.m */; };
+		04A823E62BFE1F9E0006011D /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A823DB2BFE1F9D0006011D /* FMDatabasePool.m */; };
+		04A823E72BFE1F9E0006011D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A823DC2BFE1F9D0006011D /* FMResultSet.m */; };
+		04A823E82BFE1F9E0006011D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A823E32BFE1F9E0006011D /* FMDatabase.m */; };
+		04A823EA2BFE207C0006011D /* DatabaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A823E92BFE207C0006011D /* DatabaseDAO.swift */; };
+		04A823EC2BFE209A0006011D /* TodoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A823EB2BFE209A0006011D /* TodoDAO.swift */; };
+		04A823EE2BFE20A90006011D /* NoteDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A823ED2BFE20A90006011D /* NoteDAO.swift */; };
 		CE644B892BD355F40041EB04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE644B882BD355F40041EB04 /* AppDelegate.swift */; };
 		CE644B8B2BD355F40041EB04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE644B8A2BD355F40041EB04 /* SceneDelegate.swift */; };
 		CE644B8D2BD355F40041EB04 /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE644B8C2BD355F40041EB04 /* WeatherController.swift */; };
@@ -21,10 +46,6 @@
 		CE644BAF2BD355F50041EB04 /* DemoWeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE644BAE2BD355F50041EB04 /* DemoWeatherAppUITestsLaunchTests.swift */; };
 		CE7FFEDD2BF835F500980A6C /* HourWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FFEDC2BF835F500980A6C /* HourWeatherCell.swift */; };
 		CE7FFEDF2BF8367400980A6C /* HourWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FFEDE2BF8367400980A6C /* HourWeatherView.swift */; };
-		CE7FFEE52BF859F500980A6C /* AttributeWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FFEE42BF859F500980A6C /* AttributeWeatherView.swift */; };
-		CE7FFEE72BF85A2300980A6C /* AttributeWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FFEE62BF85A2300980A6C /* AttributeWeatherCell.swift */; };
-		CE7FFEE92BF85A4500980A6C /* DayWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FFEE82BF85A4500980A6C /* DayWeatherCell.swift */; };
-		CE7FFEEB2BF85A6D00980A6C /* DayWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FFEEA2BF85A6D00980A6C /* DayWeatherView.swift */; };
 		CEC20EEF2BEF095400CEAF26 /* CalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC20EEE2BEF095400CEAF26 /* CalendarCollectionViewCell.swift */; };
 		CEC20EF32BEF16D600CEAF26 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC20EF22BEF16D600CEAF26 /* CalendarController.swift */; };
 		CEC20EF52BEF170700CEAF26 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC20EF42BEF170700CEAF26 /* CalendarView.swift */; };
@@ -48,8 +69,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042890CC2BFEE9EB00A2844B /* PinTodoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinTodoDAO.swift; sourceTree = "<group>"; };
 		047BD81F2BF1DFF40007C408 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		047BD8212BF1E0B90007C408 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		04A823A22BFAE6310006011D /* ActivitiesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesController.swift; sourceTree = "<group>"; };
+		04A823A42BFAE7140006011D /* TextNoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNoteController.swift; sourceTree = "<group>"; };
+		04A823A62BFAE7440006011D /* TextTodoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTodoController.swift; sourceTree = "<group>"; };
+		04A823A82BFAEB9C0006011D /* TodosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosController.swift; sourceTree = "<group>"; };
+		04A823AA2BFAEBA90006011D /* NotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesController.swift; sourceTree = "<group>"; };
+		04A823AD2BFB356B0006011D /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		04A823AF2BFB35910006011D /* NotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCell.swift; sourceTree = "<group>"; };
+		04A823B12BFB382F0006011D /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		04A823B42BFB49320006011D /* TodoesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoesView.swift; sourceTree = "<group>"; };
+		04A823B62BFB49540006011D /* TodoesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoesCell.swift; sourceTree = "<group>"; };
+		04A823B92BFB4B260006011D /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		04A823CA2BFD8A200006011D /* OpenWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherAPI.swift; sourceTree = "<group>"; };
+		04A823CD2BFDC6C60006011D /* AddToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoView.swift; sourceTree = "<group>"; };
+		04A823CF2BFDC76B0006011D /* AddToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoCell.swift; sourceTree = "<group>"; };
+		04A823D22BFDD8E70006011D /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		04A823D82BFE1F9D0006011D /* DemoWeatherApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoWeatherApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		04A823D92BFE1F9D0006011D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = DemoWeatherApp/FMDB/src/FMDatabaseAdditions.m; sourceTree = SOURCE_ROOT; };
+		04A823DA2BFE1F9D0006011D /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = DemoWeatherApp/FMDB/src/FMDatabaseQueue.m; sourceTree = SOURCE_ROOT; };
+		04A823DB2BFE1F9D0006011D /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = DemoWeatherApp/FMDB/src/FMDatabasePool.m; sourceTree = SOURCE_ROOT; };
+		04A823DC2BFE1F9D0006011D /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = DemoWeatherApp/FMDB/src/FMResultSet.m; sourceTree = SOURCE_ROOT; };
+		04A823DD2BFE1F9D0006011D /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = DemoWeatherApp/FMDB/src/FMResultSet.h; sourceTree = SOURCE_ROOT; };
+		04A823DE2BFE1F9D0006011D /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = DemoWeatherApp/FMDB/src/FMDatabaseQueue.h; sourceTree = SOURCE_ROOT; };
+		04A823DF2BFE1F9D0006011D /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = DemoWeatherApp/FMDB/src/FMDatabase.h; sourceTree = SOURCE_ROOT; };
+		04A823E02BFE1F9E0006011D /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = DemoWeatherApp/FMDB/src/FMDB.h; sourceTree = SOURCE_ROOT; };
+		04A823E12BFE1F9E0006011D /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = DemoWeatherApp/FMDB/src/FMDatabaseAdditions.h; sourceTree = SOURCE_ROOT; };
+		04A823E22BFE1F9E0006011D /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = DemoWeatherApp/FMDB/src/FMDatabasePool.h; sourceTree = SOURCE_ROOT; };
+		04A823E32BFE1F9E0006011D /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = DemoWeatherApp/FMDB/src/FMDatabase.m; sourceTree = SOURCE_ROOT; };
+		04A823E92BFE207C0006011D /* DatabaseDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseDAO.swift; sourceTree = "<group>"; };
+		04A823EB2BFE209A0006011D /* TodoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDAO.swift; sourceTree = "<group>"; };
+		04A823ED2BFE20A90006011D /* NoteDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDAO.swift; sourceTree = "<group>"; };
 		CE644B852BD355F40041EB04 /* DemoWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE644B882BD355F40041EB04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE644B8A2BD355F40041EB04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,10 +118,6 @@
 		CE644BAE2BD355F50041EB04 /* DemoWeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoWeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CE7FFEDC2BF835F500980A6C /* HourWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourWeatherCell.swift; sourceTree = "<group>"; };
 		CE7FFEDE2BF8367400980A6C /* HourWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourWeatherView.swift; sourceTree = "<group>"; };
-		CE7FFEE42BF859F500980A6C /* AttributeWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeWeatherView.swift; sourceTree = "<group>"; };
-		CE7FFEE62BF85A2300980A6C /* AttributeWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeWeatherCell.swift; sourceTree = "<group>"; };
-		CE7FFEE82BF85A4500980A6C /* DayWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherCell.swift; sourceTree = "<group>"; };
-		CE7FFEEA2BF85A6D00980A6C /* DayWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherView.swift; sourceTree = "<group>"; };
 		CEC20EEE2BEF095400CEAF26 /* CalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewCell.swift; sourceTree = "<group>"; };
 		CEC20EF22BEF16D600CEAF26 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		CEC20EF42BEF170700CEAF26 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -80,6 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0494D2562C08CC59008758E9 /* CoreXLSX in Frameworks */,
+				04A823D32BFDD8E70006011D /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +150,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04A4272D2BF88D0600C84A07 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04A823B12BFB382F0006011D /* Note.swift */,
+				04A823B92BFB4B260006011D /* Todo.swift */,
+				04A823CA2BFD8A200006011D /* OpenWeatherAPI.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04A823AC2BFB34C80006011D /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				04A823AD2BFB356B0006011D /* NotesView.swift */,
+				04A823AF2BFB35910006011D /* NotesCell.swift */,
+			);
+			name = Note;
+			sourceTree = "<group>";
+		};
+		04A823B82BFB498C0006011D /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				04A823B62BFB49540006011D /* TodoesCell.swift */,
+				04A823B42BFB49320006011D /* TodoesView.swift */,
+			);
+			name = Todo;
+			sourceTree = "<group>";
+		};
+		04A823CC2BFDC68A0006011D /* AddToDo */ = {
+			isa = PBXGroup;
+			children = (
+				04A823CD2BFDC6C60006011D /* AddToDoView.swift */,
+				04A823CF2BFDC76B0006011D /* AddToDoCell.swift */,
+			);
+			name = AddToDo;
+			sourceTree = "<group>";
+		};
+		04A823D12BFDD8E70006011D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04A823D22BFDD8E70006011D /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04A823D42BFDD90D0006011D /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				04A823D72BFE1E710006011D /* DAL */,
+				04A823D62BFE1E5D0006011D /* fmdb_framework */,
+				04A823D52BFDD9280006011D /* src */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		04A823D52BFDD9280006011D /* src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		04A823D62BFE1E5D0006011D /* fmdb_framework */ = {
+			isa = PBXGroup;
+			children = (
+				04A823DF2BFE1F9D0006011D /* FMDatabase.h */,
+				04A823E32BFE1F9E0006011D /* FMDatabase.m */,
+				04A823E12BFE1F9E0006011D /* FMDatabaseAdditions.h */,
+				04A823D92BFE1F9D0006011D /* FMDatabaseAdditions.m */,
+				04A823E22BFE1F9E0006011D /* FMDatabasePool.h */,
+				04A823DB2BFE1F9D0006011D /* FMDatabasePool.m */,
+				04A823DE2BFE1F9D0006011D /* FMDatabaseQueue.h */,
+				04A823DA2BFE1F9D0006011D /* FMDatabaseQueue.m */,
+				04A823E02BFE1F9E0006011D /* FMDB.h */,
+				04A823DD2BFE1F9D0006011D /* FMResultSet.h */,
+				04A823DC2BFE1F9D0006011D /* FMResultSet.m */,
+				04A823D82BFE1F9D0006011D /* DemoWeatherApp-Bridging-Header.h */,
+			);
+			path = fmdb_framework;
+			sourceTree = "<group>";
+		};
+		04A823D72BFE1E710006011D /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				04A823E92BFE207C0006011D /* DatabaseDAO.swift */,
+				04A823EB2BFE209A0006011D /* TodoDAO.swift */,
+				04A823ED2BFE20A90006011D /* NoteDAO.swift */,
+				042890CC2BFEE9EB00A2844B /* PinTodoDAO.swift */,
+			);
+			path = DAL;
+			sourceTree = "<group>";
+		};
 		CE644B7C2BD355F40041EB04 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +249,7 @@
 				CE644BA12BD355F50041EB04 /* DemoWeatherAppTests */,
 				CE644BAB2BD355F50041EB04 /* DemoWeatherAppUITests */,
 				CE644B862BD355F40041EB04 /* Products */,
+				04A823D12BFDD8E70006011D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +266,8 @@
 		CE644B872BD355F40041EB04 /* DemoWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				04A823D42BFDD90D0006011D /* FMDB */,
+				04A4272D2BF88D0600C84A07 /* Models */,
 				CEC20EEB2BEF090C00CEAF26 /* Controls */,
 				CE644BBC2BD356130041EB04 /* Controllers */,
 				CE644BBB2BD355FD0041EB04 /* Systems */,
@@ -167,6 +312,11 @@
 				CE644B8C2BD355F40041EB04 /* WeatherController.swift */,
 				CEC20EF22BEF16D600CEAF26 /* CalendarController.swift */,
 				047BD8212BF1E0B90007C408 /* HomeController.swift */,
+				04A823A22BFAE6310006011D /* ActivitiesController.swift */,
+				04A823A42BFAE7140006011D /* TextNoteController.swift */,
+				04A823A62BFAE7440006011D /* TextTodoController.swift */,
+				04A823A82BFAEB9C0006011D /* TodosController.swift */,
+				04A823AA2BFAEBA90006011D /* NotesController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -190,29 +340,12 @@
 			name = HourWeather;
 			sourceTree = "<group>";
 		};
-		CE7FFEE22BF855CB00980A6C /* DayWeather */ = {
-			isa = PBXGroup;
-			children = (
-				CE7FFEE82BF85A4500980A6C /* DayWeatherCell.swift */,
-				CE7FFEEA2BF85A6D00980A6C /* DayWeatherView.swift */,
-			);
-			name = DayWeather;
-			sourceTree = "<group>";
-		};
-		CE7FFEE32BF855EC00980A6C /* AttributeWeather */ = {
-			isa = PBXGroup;
-			children = (
-				CE7FFEE42BF859F500980A6C /* AttributeWeatherView.swift */,
-				CE7FFEE62BF85A2300980A6C /* AttributeWeatherCell.swift */,
-			);
-			name = AttributeWeather;
-			sourceTree = "<group>";
-		};
 		CEC20EEB2BEF090C00CEAF26 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
-				CE7FFEE32BF855EC00980A6C /* AttributeWeather */,
-				CE7FFEE22BF855CB00980A6C /* DayWeather */,
+				04A823CC2BFDC68A0006011D /* AddToDo */,
+				04A823B82BFB498C0006011D /* Todo */,
+				04A823AC2BFB34C80006011D /* Note */,
 				CE7FFEE12BF855AC00980A6C /* HourWeather */,
 				CE7FFEE02BF8558F00980A6C /* Calendar */,
 			);
@@ -235,6 +368,9 @@
 			dependencies = (
 			);
 			name = DemoWeatherApp;
+			packageProductDependencies = (
+				0494D2552C08CC59008758E9 /* CoreXLSX */,
+			);
 			productName = DemoWeatherApp;
 			productReference = CE644B852BD355F40041EB04 /* DemoWeatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -287,6 +423,7 @@
 				TargetAttributes = {
 					CE644B842BD355F40041EB04 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1530;
 					};
 					CE644B9D2BD355F50041EB04 = {
 						CreatedOnToolsVersion = 14.2;
@@ -307,6 +444,9 @@
 				Base,
 			);
 			mainGroup = CE644B7C2BD355F40041EB04;
+			packageReferences = (
+				0494D2542C08C86A008758E9 /* XCRemoteSwiftPackageReference "CoreXLSX" */,
+			);
 			productRefGroup = CE644B862BD355F40041EB04 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -350,21 +490,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A823AB2BFAEBA90006011D /* NotesController.swift in Sources */,
+				04A823B52BFB49320006011D /* TodoesView.swift in Sources */,
 				047BD8202BF1DFF40007C408 /* CalendarViewController.swift in Sources */,
 				CEC20EEF2BEF095400CEAF26 /* CalendarCollectionViewCell.swift in Sources */,
+				04A823A52BFAE7140006011D /* TextNoteController.swift in Sources */,
 				CEC20EF52BEF170700CEAF26 /* CalendarView.swift in Sources */,
-				CE7FFEE72BF85A2300980A6C /* AttributeWeatherCell.swift in Sources */,
 				CEC20EF32BEF16D600CEAF26 /* CalendarController.swift in Sources */,
 				CE7FFEDF2BF8367400980A6C /* HourWeatherView.swift in Sources */,
 				CE644B8D2BD355F40041EB04 /* WeatherController.swift in Sources */,
-				CE7FFEE92BF85A4500980A6C /* DayWeatherCell.swift in Sources */,
+				04A823CB2BFD8A200006011D /* OpenWeatherAPI.swift in Sources */,
+				04A823AE2BFB356B0006011D /* NotesView.swift in Sources */,
+				04A823E62BFE1F9E0006011D /* FMDatabasePool.m in Sources */,
 				047BD8222BF1E0B90007C408 /* HomeController.swift in Sources */,
 				CE7FFEDD2BF835F500980A6C /* HourWeatherCell.swift in Sources */,
-				CE7FFEEB2BF85A6D00980A6C /* DayWeatherView.swift in Sources */,
-				CE7FFEE52BF859F500980A6C /* AttributeWeatherView.swift in Sources */,
+				04A823A72BFAE7440006011D /* TextTodoController.swift in Sources */,
+				04A823EC2BFE209A0006011D /* TodoDAO.swift in Sources */,
+				04A823BA2BFB4B260006011D /* Todo.swift in Sources */,
+				04A823CE2BFDC6C60006011D /* AddToDoView.swift in Sources */,
+				04A823D02BFDC76B0006011D /* AddToDoCell.swift in Sources */,
+				04A823EE2BFE20A90006011D /* NoteDAO.swift in Sources */,
+				042890CD2BFEE9EB00A2844B /* PinTodoDAO.swift in Sources */,
+				04A823E82BFE1F9E0006011D /* FMDatabase.m in Sources */,
 				CE644B932BD355F40041EB04 /* DemoWeatherApp.xcdatamodeld in Sources */,
 				CE644B892BD355F40041EB04 /* AppDelegate.swift in Sources */,
+				04A823B22BFB382F0006011D /* Note.swift in Sources */,
+				04A823B72BFB49540006011D /* TodoesCell.swift in Sources */,
+				04A823A92BFAEB9C0006011D /* TodosController.swift in Sources */,
+				04A823A32BFAE6310006011D /* ActivitiesController.swift in Sources */,
+				04A823E52BFE1F9E0006011D /* FMDatabaseQueue.m in Sources */,
+				04A823B02BFB35910006011D /* NotesCell.swift in Sources */,
+				04A823E72BFE1F9E0006011D /* FMResultSet.m in Sources */,
 				CE644B8B2BD355F40041EB04 /* SceneDelegate.swift in Sources */,
+				04A823EA2BFE207C0006011D /* DatabaseDAO.swift in Sources */,
+				04A823E42BFE1F9E0006011D /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +698,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -556,6 +716,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vn.edu.tdc.DemoWeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoWeatherApp/FMDB/fmdb_framework/DemoWeatherApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -566,6 +728,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -583,6 +746,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vn.edu.tdc.DemoWeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoWeatherApp/FMDB/fmdb_framework/DemoWeatherApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -700,6 +864,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0494D2542C08C86A008758E9 /* XCRemoteSwiftPackageReference "CoreXLSX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CoreOffice/CoreXLSX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0494D2552C08CC59008758E9 /* CoreXLSX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0494D2542C08C86A008758E9 /* XCRemoteSwiftPackageReference "CoreXLSX" */;
+			productName = CoreXLSX;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CE644B912BD355F40041EB04 /* DemoWeatherApp.xcdatamodeld */ = {

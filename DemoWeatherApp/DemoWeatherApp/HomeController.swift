@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreXLSX
 
 class HomeController: UIViewController,
   UICollectionViewDelegate,
@@ -27,6 +28,7 @@ class HomeController: UIViewController,
             
             cell.btnDate.tintColor = .blue;
             cell.btnDate.isHidden = false;
+            cell.homeController = self;
             
             var frame = cell.btnDate.frame;
             frame.size.width = 50;
@@ -39,10 +41,10 @@ class HomeController: UIViewController,
                 cell.btnDate.isHidden = true;
             }
             
-            if calendar.component(.month, from: Date()) == currentMonth {
-                if (indexPath.row + 1 - offset) == currentDay {
+            if calendar.component(.month, from: Date()) == currentMonth, 
+                calendar.component(.day, from: Date()) == calendar.component(.day, from: list[indexPath.row]),
+               calendar.component(.year, from: Date()) == currentYear {
                     cell.btnDate.tintColor = .red;
-                }
             }
             
             cell.date = list[indexPath.row];
@@ -62,6 +64,43 @@ class HomeController: UIViewController,
         return 5;
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if let activitiesController =  self.storyboard!.instantiateViewController(withIdentifier: "ActivitiesController") as? ActivitiesController {
+            
+            present(activitiesController, animated: true);
+            
+        }
+    }
+    
+    public func toGoActitvitiesView(date:Date) {
+        if let activitiesController = self.storyboard!.instantiateViewController(withIdentifier: "ActivitiesController") as? ActivitiesController {
+            
+            activitiesController.currentDate = date;
+            
+            present(activitiesController, animated: true)
+        }
+    }
+    
+    
+    @IBAction func viewDeletedNotes(_ sender: UIButton) {
+        if let notesController = self.storyboard!.instantiateViewController(withIdentifier: "NotesController") as? NotesController {
+            
+            notesController.isRefreshed = true;
+            
+            present(notesController, animated: true)
+        }
+    }
+    
+    
+    @IBAction func viewDeletedToDos(_ sender: UIButton) {
+        if let todosController = self.storyboard!.instantiateViewController(withIdentifier: "TodosController") as? TodosController {
+            
+            todosController.isRefreshed = true;
+            present(todosController, animated: true)
+            todosController.isRefreshed = true;
+        }
+    }
     
     //MARK: FIELDS
     private var calendar = Calendar.current;
@@ -106,19 +145,7 @@ class HomeController: UIViewController,
         currentYear = calendar.component(.year, from: Date());
         
         updateCalendar();
-        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     //MARK: METHODS
     private func updateCalendar() {
@@ -165,6 +192,59 @@ class HomeController: UIViewController,
         UIGraphicsEndImageContext()
         return image
     }
+    
+    
+    @IBAction func exportMyActicities(_ sender: UIButton) {
+        let fileName = "Daily Activities.txt";
+        
+        DatabaseDAO.initDatabase();
+        var content = ""
+        + "\t\t\t\t\t  G H I  C H Ú\n"
+        + "\(NoteDAO.all())"
+        + "\n\n"
+        + "\t\t\tD A N H  S Á C H  C Ô N G  V I Ệ C \n"
+        + "\(TodoDAO.all())"
+        + "\n\n";
+        
+        createAndShareFile(content: content, fileName: fileName, from: self)
+    }
+    
+    func createFileURL(fileName: String) -> URL? {
+        let fileManager = FileManager.default
+        do {
+            let documentsURL = try fileManager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+            return documentsURL.appendingPathComponent(fileName)
+        } catch {
+            print("Error creating file URL: \(error)")
+            return nil
+        }
+    }
+    
+    func writeContentToFile(content: String, fileName: String) -> URL? {
+        guard let fileURL = createFileURL(fileName: fileName) else {
+            return nil
+        }
+        
+        do {
+            try content.write(to: fileURL, atomically: true, encoding: .utf8)
+            return fileURL
+        } catch {
+            print("Error writing to file: \(error)")
+            return nil
+        }
+    }
 
+    func presentShareSheet(fileURL: URL, from viewController: UIViewController) {
+        let activityViewController = UIActivityViewController(activityItems: [fileURL], applicationActivities: nil)
+        viewController.present(activityViewController, animated: true, completion: nil)
+    }
+    
+    func createAndShareFile(content: String, fileName: String, from viewController: UIViewController) {
+        if let fileURL = writeContentToFile(content: content, fileName: fileName) {
+            presentShareSheet(fileURL: fileURL, from: viewController)
+        } else {
+            print("Failed to create and share file.")
+        }
+    }
 
 }
