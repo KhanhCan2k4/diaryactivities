@@ -17,6 +17,14 @@ class TextNoteController: UIViewController, UITextFieldDelegate, UITextViewDeleg
     
     @IBAction func save(_ sender: UIBarButtonItem) {
         if let title = txtTitle.text, let content = txtContent.text {
+            if title.isEmpty{
+                let alert = UIAlertController(title: "Lỗi tiêu đề", message: "Tiêu đề không được để trống!", preferredStyle: .alert);
+                alert.addAction(UIAlertAction(title: "Đóng", style: .default, handler: { _ in
+                    self.dismiss(animated: true);
+                }));
+                self.present(alert, animated: true, completion: nil);
+                return ;
+            }
             if let activtivitiesController = self.storyboard!.instantiateViewController(withIdentifier: "ActivitiesController") as? ActivitiesController {
                 if isEdit == true {
                     note!.name = title

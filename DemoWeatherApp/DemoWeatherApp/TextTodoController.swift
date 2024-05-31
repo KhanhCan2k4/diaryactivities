@@ -72,6 +72,7 @@ class TextTodoController: UIViewController, UICollectionViewDelegate, UICollecti
             // Thuc hien chinh sua
             // 1. mo db
             DatabaseDAO.initDatabase();
+            var flag = 0
             
             // 2. them todo vao db
             if let todo = self.todo {
@@ -83,7 +84,22 @@ class TextTodoController: UIViewController, UICollectionViewDelegate, UICollecti
                         
                         // luu len db
                         NoteDAO.destroy(id: t.id);
-                        NoteDAO.store(note: t);
+                        if t.name.isEmpty{
+                            flag = flag + 1
+                        }
+                        else{
+                            NoteDAO.store(note: t);
+                        }
+                    }
+                    if flag == todo.todos.count {
+                        let alert = UIAlertController(title: "Lỗi thêm công việc", message: "Nội dung công việc không được để trống!", preferredStyle: .alert);
+                        alert.addAction(UIAlertAction(title: "Đóng", style: .default, handler: { _ in
+                            self.dismiss(animated: true);
+                        }));
+                        self.present(alert, animated: true, completion: nil);
+                        TodoDAO.destroy(id: todo.id);
+                        return ;
+                        
                     }
                     
                     let alert = UIAlertController(title: "Sửa danh sách công việc", message: "Sửa danh sách công việc thành công\n(Mẹo: tải lại trang để hiện danh sách mới!)", preferredStyle: .alert);
@@ -106,6 +122,7 @@ class TextTodoController: UIViewController, UICollectionViewDelegate, UICollecti
             //            print(todoController!.todo!.todos)
             // 1. mo db
             DatabaseDAO.initDatabase();
+            var flag = 0;
             
             // 2. them todo vao db
             if let todo = self.todo {
@@ -115,8 +132,23 @@ class TextTodoController: UIViewController, UICollectionViewDelegate, UICollecti
                     for i in 0..<todo.todos.count {
                         let t = todo.todos[i];
                         t.todoId = todo.id;
+                        if t.name.isEmpty{
+                            flag = flag + 1
+                        }
+                        else
+                        {
+                            NoteDAO.store(note: t)
+                        }
+                    }
+                    if flag == todo.todos.count {
+                        let alert = UIAlertController(title: "Lỗi thêm công việc", message: "Nội dung công việc không được để trống!", preferredStyle: .alert);
+                        alert.addAction(UIAlertAction(title: "Đóng", style: .default, handler: { _ in
+                            self.dismiss(animated: true);
+                        }));
+                        self.present(alert, animated: true, completion: nil);
+                        TodoDAO.destroy(id: todo.id);
+                        return ;
                         
-                        NoteDAO.store(note: t)
                     }
                     
                     let alert = UIAlertController(title: "Thêm danh sách công việc", message: "Thêm danh sách công việc thành công\n(Mẹo: tải lại trang để hiện danh sách mới!)", preferredStyle: .alert);

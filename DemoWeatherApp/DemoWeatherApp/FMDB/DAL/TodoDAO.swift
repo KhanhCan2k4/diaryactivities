@@ -105,7 +105,7 @@ class TodoDAO : DatabaseDAO {
         if super.open() {
             todos.removeAll();
             
-            let sql = "SELECT * FROM \(TABLE_NAME) ORDER BY \(DATE) DESC";
+            let sql = "SELECT * FROM \(TABLE_NAME) WHERE \(IN_TRASH) = 0 ORDER BY \(DATE) DESC ";
             
             let formatedDate = date.formatted(date: .numeric, time: .omitted);
             
